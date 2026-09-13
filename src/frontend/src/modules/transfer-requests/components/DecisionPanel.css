@@ -1,0 +1,39 @@
+.decision-panel {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+  max-width: 28rem;
+}
+
+.decision-panel__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.decision-panel__reject {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.decision-panel__reject textarea {
+  padding: 0.4rem 0.5rem;
+  font-size: 0.95rem;
+}
+
+.decision-panel button {
+  align-self: flex-start;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+.decision-panel button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.decision-panel__error {
+  color: #b00020;
+}

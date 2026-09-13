@@ -1,0 +1,35 @@
+.task-queue__row {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.task-queue__not-required {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.task-queue__not-required textarea {
+  padding: 0.4rem 0.5rem;
+}
+
+.task-queue__row button {
+  align-self: flex-start;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+.task-queue__row button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.task-queue__error {
+  color: #b00020;
+}

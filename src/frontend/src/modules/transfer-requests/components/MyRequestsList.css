@@ -1,0 +1,29 @@
+.my-requests-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.my-requests-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.my-requests-list__status {
+  font-weight: 600;
+}
+
+.my-requests-list__pending-with {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.my-requests-list__error {
+  color: #b00020;
+}

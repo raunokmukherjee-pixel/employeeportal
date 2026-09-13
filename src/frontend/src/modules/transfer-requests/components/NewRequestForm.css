@@ -1,0 +1,48 @@
+.new-request-form {
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-field label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 0.4rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.field-error {
+  color: #b00020;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.form-error {
+  color: #b00020;
+  font-weight: 600;
+}
+
+.new-request-form button {
+  align-self: flex-start;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.new-request-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

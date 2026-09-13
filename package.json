@@ -1,0 +1,20 @@
+{
+  "name": "employee-transfer-webapp-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Employee Internal Transfer Web App - backend (ported from implementation/, per employee-transfer-webapp spec)",
+  "main": "src/backend/index.js",
+  "scripts": {
+    "test": "jest --config jest.config.backend.js --runInBand",
+    "test:unit": "jest --config jest.config.backend.js --runInBand tests/backend/unit",
+    "test:integration": "jest --config jest.config.backend.js --runInBand tests/backend/integration",
+    "start": "node src/backend/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

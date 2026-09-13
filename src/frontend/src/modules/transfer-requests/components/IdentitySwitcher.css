@@ -1,0 +1,20 @@
+.identity-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.identity-switcher label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.identity-switcher select {
+  padding: 0.25rem 0.4rem;
+}
+
+.identity-switcher__roles {
+  color: #555;
+  font-size: 0.8rem;
+}

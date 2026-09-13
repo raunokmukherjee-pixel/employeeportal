@@ -1,0 +1,66 @@
+<!-- Gate Review Dashboard template — copy and fill the DATA array below from
+     .ai-context/status.md and each spec's "Gate Approvals & History" table.
+     Static HTML/CSS/JS, no build step, no external dependencies. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Gate Review Dashboard</title>
+<style>
+  :root {
+    --bg: #f7f7f8; --panel: #ffffff; --border: #e2e2e6; --text: #1c1c1f; --muted: #6b6b73;
+    --approved: #1f8a4c; --conditions: #b8860b; --pending: #8a8a92; --rejected: #b3261e;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 -apple-system, Segoe UI, sans-serif; }
+  header { padding: 20px 28px; border-bottom: 1px solid var(--border); background: var(--panel); }
+  header h1 { margin: 0 0 4px; font-size: 18px; }
+  header p { margin: 0; color: var(--muted); }
+  main { padding: 24px 28px; display: grid; gap: 16px; }
+  table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  th { background: #fafafa; color: var(--muted); font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #fff; }
+  .badge.approved { background: var(--approved); }
+  .badge.conditions { background: var(--conditions); }
+  .badge.pending { background: var(--pending); }
+  .badge.rejected { background: var(--rejected); }
+  .comment { color: var(--muted); font-style: italic; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Gate Review Dashboard</h1>
+  <p>Gate 1 (Spec/BRD-traceability review) and Gate 2 (technical evidence/code review) status per spec.</p>
+</header>
+<main>
+  <table id="board">
+    <thead>
+      <tr><th>Spec ID</th><th>Title</th><th>Gate 1</th><th>Gate 2</th><th>Approval Comment</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</main>
+<script>
+  // Fill from .ai-context/status.md + each spec's Gate Approvals & History table.
+  const DATA = [
+    // { specId: 'feature-slug', title: 'Feature title', gate1: 'approved'|'conditions'|'pending'|'rejected',
+    //   gate2: 'approved'|'conditions'|'pending'|'rejected', comment: 'latest approval comment' }
+  ];
+
+  const tbody = document.querySelector('#board tbody');
+  function badge(status) {
+    if (!status) return '<span class="badge pending">Pending</span>';
+    const label = { approved: 'Approved', conditions: 'Conditions', pending: 'Pending', rejected: 'Rejected' }[status] || status;
+    return `<span class="badge ${status}">${label}</span>`;
+  }
+  DATA.forEach(row => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${row.specId}</td><td>${row.title}</td><td>${badge(row.gate1)}</td>` +
+      `<td>${badge(row.gate2)}</td><td class="comment">${row.comment || ''}</td>`;
+    tbody.appendChild(tr);
+  });
+</script>
+</body>
+</html>
