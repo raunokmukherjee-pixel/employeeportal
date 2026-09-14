@@ -21,12 +21,13 @@ Standard in force: **INT Engineering Guidelines — Specification-Driven Deliver
 
 ## Governance & Roles
 
-| Role | Person | Responsibility |
-|---|---|---|
-| Technical Lead / Architect | **[Open]** — no Technical Lead is named in the source deliverables. Gate 2 evidence (originally `10-gate2/Gate2-Evidence.md`, removed 2026-09-13) was self-assessed by the author, not signed off by a distinct TL — see the Gate 2 gap note in [`.ai-context/specs/employee-internal-transfer.spec.md`](specs/employee-internal-transfer.spec.md). | Owns this constitution; default Gate 2 code reviewer; technical concurrence at Gate 1. |
-| Senior Software Engineer / Spec Author | **Raunok Mukherjee** — confirmed as the author under review in the original `09-gate1/Gate1_Review_RaunokMukherjee.docx` review document ("Author under review: Raunok Mukherjee") — that file, and the `tracker/` spreadsheet corroborating it, were never actually present in this working copy (referenced by the original deliverables but not found here). The original `README.md`'s "Candidate: Soumyadeep Adhikary" line was stale/incorrect and has since been rewritten — Soumyadeep was the Gate 1 *reviewer* (see below), not the author. | Default Spec Author for feature and retro-specs. |
-| Project Manager | **[Open]** — not named in the source deliverables. The Gate 1 review was performed by an external INT reviewer (below), not a named in-project PM. | Owns BRD entries and product-side sign-off; default Gate 1 reviewer. |
-| Gate 1 Reviewer (INT Delivery Leadership) | **Soumyadeep** — performed the Gate 1 peer review on 2026-09-08, verdict "Approved With Conditions" (conditions resolved in Feature-Spec v1.1). Full text was in the original `09-gate1/Gate1_Review_RaunokMukherjee.docx` (never actually present in this working copy). | External INT-side Gate 1 reviewer for this submission — distinct from the in-project PM/TL roles above, which remain unfilled. |
+| Role | Person | Email | Responsibility |
+|---|---|---|---|
+| Technical Lead / Architect | **Supratim Jetty** | `supratim.jetty@intglobal.com` | Owns this constitution; default Gate 2 code reviewer; technical concurrence at Gate 1. |
+| Senior Software Engineer / Spec Author | **Raunok Mukherjee** | `raunok.mukherjee@intglobal.com` | Default Spec Author for feature and retro-specs. |
+| Project Manager | **Supratim Jetty** | `supratim.jetty@intglobal.com` | Owns BRD entries and product-side sign-off; default Gate 1 reviewer. |
+| Gate 1 Reviewer | **Supratim Jetty** | `supratim.jetty@intglobal.com` | Primary Gate 1 Spec Reviewer for feature specs. |
+| Gate 2 Reviewer | **Supratim Jetty** | `supratim.jetty@intglobal.com` | Primary Gate 2 Code Reviewer for pull requests and releases. |
 
 ### Core Governance Rules (process rules already followed in this repo's own SDD chain):
 - **Author ≠ Reviewer**: Gate 1 review (originally documented in `09-gate1/Gate1_Review_RaunokMukherjee.docx`)

@@ -70,8 +70,14 @@ note) and was itself later removed along with the other assessment-deliverable f
 lists real infra adapters as explicitly deferred/out of scope for this exercise. Do not assume
 Docker/AWS/Vercel/Kubernetes until confirmed.
 
-## 9. Related Documents
+## 9. Reviewer Roster & Governance Assignments
+- **Gate 1 Reviewers (PM / Spec Reviewers):** Supratim Jetty (`supratim.jetty@intglobal.com`)
+- **Gate 2 Reviewers (TL / Code Reviewers):** Supratim Jetty (`supratim.jetty@intglobal.com`)
+- **Spec Author:** Raunok Mukherjee (`raunok.mukherjee@intglobal.com`)
+
+## 10. Related Documents
 - Requirement baseline: `.ai-context/BRD.md`
 - Engineering constraints: `.ai-context/constitution.md`
 - Registered feature spec: `.ai-context/specs/employee-internal-transfer.spec.md`
 - Status board: `.ai-context/status.md`
+

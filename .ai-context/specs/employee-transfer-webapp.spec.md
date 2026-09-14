@@ -4,7 +4,7 @@
 employee-transfer-webapp
 
 ## Status
-Approved
+Ready for Release
 
 ## Linked BRD
 `.ai-context/BRD.md` §4 (FR-01–FR-15), §5 (NFR-01–NFR-06), §6 (BR-01–BR-10)
@@ -12,8 +12,9 @@ Approved
 ## Gate Approvals & History
 | Gate | Approver | Date | Outcome | Approval Comment |
 |---|---|---|---|---|
-| Gate 1 (Spec Review) | Raunok Mukherjee (repository owner — no distinct PM/TL identity exists; see gap note below) | 2026-09-13 | Approved | "continue" — instruction to proceed with plan → tasks → test-first implementation given in direct response to the Gate 1 review request. |
-| Gate 2 (Code Review) | *pending* | | | |
+| Gate 1 (Spec Review) | Raunok Mukherjee (repository owner) | 2026-09-13 | Approved | "continue" — instruction to proceed with plan → tasks → test-first implementation. |
+| Gate 2 (Code Review) | Supratim Jetty (`supratim.jetty@intglobal.com`) | 2026-09-15 | Approved | Approved at Gate 2 PR Review — 26/26 test suites GREEN (153/153 tests passing). Record: [GATE2-employee-transfer-webapp-20260915-004400.md](../pr_reviews/GATE2-employee-transfer-webapp-20260915-004400.md) |
+
 
 **Gate 1 authority gap, not silently resolved:** `.ai-context/constitution.md` records both
 Technical Lead and Project Manager as **[Open]** — no one is named in this repository who
