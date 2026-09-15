@@ -214,5 +214,10 @@ Executed strict cleanup and synchronization:
 3. Cleaned all nested `resources/` directories from local skill folders.
 4. Synced all global rules, workflows, and skills exclusively into `.agent/` (`.agent/rules/`, `.agent/workflows/`, `.agent/skills/`).
 
-
-
+## 2026-09-15 — `/int-sync-global-skills`
+User invoked `/int-sync-global-skills`. Executed global skill, workflow, and control plane synchronization adhering to `.agent/` single control plane standard:
+1. Non-destructive guarantee: `.ai-context/` business artifacts and source code (`src/`, `tests/`, `implementation/`) preserved without modification.
+2. Synced control plane rules from `C:\Users\Supratim_Jetty\.gemini\config\skills\int-project-setup\resources\INT-Control-Plane\.agent\rules\` to `.agent/rules/` (`.agentignore`, `auto-log.md`, `int-standards.md`).
+3. Synced 11 global workflows from `C:\Users\Supratim_Jetty\.gemini\config\global_workflows\` to `.agent/workflows/`.
+4. Synced 8 global skills from `C:\Users\Supratim_Jetty\.gemini\config\skills\` clean into `.agent/skills/` (excluding `resources/` folders).
+5. Cleaned legacy directories (`.agents`, root `workflows`, nested `resources/`).
